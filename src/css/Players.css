@@ -1,0 +1,48 @@
+.players {
+    border-right: solid 3px rgba(0,0,0,0.5);
+    height: var(--main-container-h);
+}
+.players ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.players ul li {
+    margin: 0 0 0 0.4rem;
+}
+.players ul li::before {
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
+    font-size: 2rem;
+    content: "\2022";
+    color: #0dff23;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.playersContainer{
+    flex-grow: 2;
+    border-right: solid 3px rgba(0,0,0,0.5);
+}
+.player-info, .players-list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.players-list{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.player-info{
+    padding: 0.4rem 0.8rem;
+    position: relative;
+    overflow-y: auto;
+    flex-grow: 0;
+}
+.player-info button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

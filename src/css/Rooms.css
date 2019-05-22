@@ -1,0 +1,33 @@
+.Rooms .count {
+    display: inline-block;
+    margin-left: 3px;
+    background: white;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+.Rooms ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Rooms li{
+    margin-bottom: 0.4rem;
+    position: relative;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+}
+.Rooms h5{
+    padding-right: 1rem;
+}
+.Rooms button{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.roomsContainer{
+    height: var(--main-container-h);
+}
+.Rooms{
+    padding: 0.6rem 0.4rem;
+    overflow-y: auto;
+}

@@ -1,0 +1,86 @@
+.tateti{
+    position: relative;
+    display: flex;
+    flex-flow: row-reverse;
+    height: var(--main-container-h);
+}
+.tateti .square.click {
+    cursor: pointer;
+}
+.tateti .square.click:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.tateti .square.squareX:before,
+.tateti .square.squareX:after {
+    content: '';
+    border-top: solid 10px var(--main-primary-color);
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -45px;
+    transform: rotate(45deg);
+}
+.tateti .square.squareX:after {
+    transform: rotate(-45deg);
+}
+.tateti .square.squareO:before {
+    content: '';
+    border: solid 10px var(--main-secondary-color-dark);
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    border-radius: 50px;
+}
+.tateti table {
+    display: flex;
+    align-self: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.tateti td {
+    width: 5rem;
+    height: 5rem;
+    border: 6px solid var(--main-bg-color);
+    position: relative;
+    user-select: none;
+}
+.tateti td span{
+    opacity: 0;
+    font-size: 0;
+}
+
+.tateti td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.tateti td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+.tateti td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+.tateti tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+.player-turn{
+    padding: 0 0.5rem;
+    width: 200px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 1rem;
+}
+.player-turn:first-of-type{
+    align-self: flex-start;
+}

@@ -1,0 +1,104 @@
+.ppt{
+    display: flex;
+    height: 345px;
+}
+.ppt .player-turn{
+
+}
+.ppt .questions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    height: 300px;
+}
+.ppt .questions li {
+    list-style-type: none;
+    margin: 0 0.5rem;
+    align-self: center;
+}
+.ppt-board{
+    display: flex;
+    flex-flow: column;
+    flex-grow: 2;
+}
+.hand {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: linear-gradient(0deg, var(--main-disabled-color-dark) 50%, var(--main-disabled-color) 50%);
+    border: solid 2px var(--main-disabled-color);
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 100px;
+}
+.hand-selectable{
+    cursor: pointer;
+}
+.hand-selectable:hover{
+    border-radius: 400px;
+    background: linear-gradient(0deg, var(--main-primary-color-dark) 50%, var(--main-primary-color) 50%);
+    border: solid 2px var(--main-primary-color);
+}
+.hand img{
+    width: 100%;
+}
+.ppt-score{
+    padding: 1rem;
+    overflow-y: auto;
+}
+.ppt-score  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+.ppt-score  table td,.ppt-score  table th  {
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+.ppt-score img {
+    width: 100%;
+    max-width: 50px;
+    display: inline;
+}
+.ppt-score .op img {
+    transform: scaleX(-1);
+}
+
+.game-me {
+    background: var(--main-secondary-color);
+    color: #000;
+}
+.game-op {
+    background: var(--main-primary-color);
+    color: #000;
+}
+.game-tie {
+    background: var(--main-disabled-color);
+    color: #000;
+}
+
+.played {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+.played .column {
+    font-size: 2rem;
+    align-items: center;
+}
+.played .column.op img {
+    transform: scaleX(-1);
+}
+.played .column.op {
+    font-size: 4rem;
+}
+.played .hand{
+    align-self: center;
+}
+.result {
+    padding: 0 1rem;
+}
