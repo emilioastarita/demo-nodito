@@ -113,10 +113,10 @@ class App extends Component {
                 </div>
                 <footer>
                     <p>
-                        Demo de la implementación de juegos por turnos utilizando <a target="_blank" rel="noopener" href="https://github.com/emilioastarita/nodito">nodito</a>.
+                        Demo de la implementación de juegos por turnos utilizando <a target="_blank" rel="noopener noreferrer" href="https://github.com/emilioastarita/nodito">nodito</a>.
                     </p>
                     <p>
-                        Código fuente de la demo <a target="_blank" rel="noopener" href="https://github.com/emilioastarita/demo-nodito">demo-nodito</a>.
+                        Código fuente de la demo <a target="_blank" rel="noopener noreferrer" href="https://github.com/emilioastarita/demo-nodito">demo-nodito</a>.
                     </p>
                     <p>Realizado por Emilio Astarita y Oski Scotto.</p>
                 </footer>
