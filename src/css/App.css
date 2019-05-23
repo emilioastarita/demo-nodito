@@ -123,9 +123,13 @@ label {
 }
 footer {
     text-align:center;
-    color: #b9b9b9;
-    padding: 7px;
+    color: #fafafa;
+    padding: 2px;
+    background: rgba(1, 84, 80, 0.7);
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 460px;
 }
 footer p {
-    margin: 2px;
+    margin: 0;
 }
